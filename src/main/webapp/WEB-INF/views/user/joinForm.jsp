@@ -9,15 +9,14 @@
         </div>
 
         <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" class="form-control" placeholder="Enter email" id="email">
-        </div>
-
-        <div class="form-group">
             <label for="password">Password:</label>
             <input type="password" class="form-control" placeholder="Enter password" id="password">
         </div>
 
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" placeholder="Enter email" id="email">
+        </div>
 
         <button id="btn-save" class="btn btn-primary">완료</button>
     </form>
