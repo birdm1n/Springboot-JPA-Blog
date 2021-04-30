@@ -31,7 +31,6 @@ public class Board {
     @Lob //  대용량 데이터
     private String content; //
 
-    @ColumnDefault("0")
     private int count;
 
     @ManyToOne(fetch = FetchType.EAGER) // Many == board, User = One 연간관계. EAGER 무조건

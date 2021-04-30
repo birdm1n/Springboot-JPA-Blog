@@ -16,9 +16,9 @@ let index ={
     save: function(){
 
         let data = {
-            username: $("#username").val(),
-            password: $("#password").val(),
-            email: $("#email").val()
+            title: $("#title").val(),
+            content: $("#content").val(),
+
 
     };
 
@@ -26,14 +26,14 @@ let index ={
         // ajax 호출시 default는 비동기 호출
         $.ajax({
             type:"POST",
-            url:"/auth/joinProc",
+            url:"/api/board",
             data: JSON.stringify(data), // http body data
             contentType:"application/json; charset=utf-8", //body data가 어떤 타입인지(MIME)
             dataType:"json" // 서버에서 응답이 왔을때 기본적으로 모든것이 문자열(생긴게 json이면) => js로 변경해줌.
             //회원가입 수행요청
         }).done(function (resp){
             //성공적이게 끝나면 실행
-            console.log(resp);
+            alert("글쓰기 완료")
             location.href = "/";
 
         }).fail(function (error){
