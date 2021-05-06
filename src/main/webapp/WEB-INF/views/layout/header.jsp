@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
     <c:choose>
-        <c:when test="${empty sessionScope.principal}">
+        <c:when test="${empty principal}">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="/auth/loginForm">로그인</a>
@@ -44,10 +44,10 @@
         <c:otherwise>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/board/saveform">글쓰기</a>
+                    <a class="nav-link" href="/board/saveForm">글쓰기</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/user/updateform">회원정보</a>
+                    <a class="nav-link" href="/user/updateForm">회원정보</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/logout">로그아웃</a>
